@@ -61,5 +61,6 @@ An interactive Power BI dashboard was created featuring:
 ---
 
 ## 📷 Dashboard Preview
-![Retail Sales Dashboard](dashboard/re
-tail_sales_dashboard.png)
+![Retail Sales Dashboard](dashboard/retail_sales_dashboard.png)
+
+
