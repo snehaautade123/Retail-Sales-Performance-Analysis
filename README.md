@@ -1,64 +1,82 @@
 # Retail Sales Performance Analysis
 
-## 📌 Project Overview
-This project analyzes retail sales data to understand sales trends, customer behavior, category performance, regional contribution, and delivery impact. The goal is to derive actionable business insights using SQL and Power BI.
+1. Project Overview
 
----
+This project analyzes retail sales data to evaluate overall business performance.
+The objective is to identify sales trends, key performance indicators (KPIs), and insights related to product categories and regional sales to support data-driven decision-making.
 
-## 🛠 Tools Used
-- Excel – Data cleaning and preprocessing  
-- PostgreSQL – Data validation and SQL analysis  
-- Power BI – Dashboard creation and data visualization  
+2. Business Objective
+The main objectives of this analysis are:
+To measure overall sales performance
+To identify top and underperforming product categories
+To analyze regional sales distribution
+To track monthly sales trends and key KPIs
 
----
+3. Tools & Technologies
+SQL – Data querying and analysis
+Excel – Data cleaning and preprocessing
+Power BI – Data visualization and dashboard creation
+DAX – Creating calculated measures and KPIs
 
-## 📊 Dataset Description
-The dataset contains order-level retail sales data including:
-- Order and shipping details
-- Customer segments
-- Product categories and sub-categories
-- Regional and geographic information
-- Sales values
+4. Dataset Description
+The dataset consists of retail transaction records containing:
+Order ID
+Order Date
+Product Category
+Sales Amount
+Quantity Sold
+Region
+Data cleaning and formatting were performed in Excel before importing the data into Power BI and SQL for analysis.
 
----
+5. Key KPIs & Measures
+The following KPIs were created using Power BI measures:
+Total Sales
+Total Orders
+Total Quantity Sold
+Average Order Value (AOV)
+Monthly Sales Trend
+Sales by Category
+Sales by Region
 
-## 🧹 Data Cleaning
-- Checked for missing and null values
-- Handled missing postal codes
-- Ensured correct data types for dates and numeric fields
-- Prepared data for SQL analysis
+Sample DAX Measures
+Total Sales = SUM(Sales[Total_Amount])
 
----
+Total Orders = DISTINCTCOUNT(Sales[Order_ID])
 
-## 🧮 SQL Analysis
-Key business questions answered using SQL:
-- Total orders and customers
-- Sales by category, segment, and region
-- Monthly sales and order trends
-- Delivery performance by shipping mode
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders])
 
-(SQL queries are available in the `sql` folder.)
+6. Analysis Approach
+Cleaned and validated raw data using Excel
+Performed data analysis using SQL queries
+Calculated KPIs using DAX measures in Power BI
+Built interactive dashboards to visualize trends and performance
 
----
+7. Dashboard & Visualizations
+The Power BI dashboard includes:
+KPI cards for total sales and orders
+Monthly sales trend analysis
+Category-wise sales comparison
+Region-wise sales distribution
+(Add Power BI dashboard screenshots here)
 
-## 📈 Dashboard Overview
-An interactive Power BI dashboard was created featuring:
-- KPI cards (Total Sales, Orders, AOV, Avg Delivery Days)
-- Monthly sales and order trends
-- Category and segment performance
-- Regional sales contribution
-- Delivery performance vs sales
+8. Key Insights
+A few product categories contribute the majority of total sales
+Certain regions show lower sales performance compared to others
+Monthly sales trends reveal seasonal patterns
+Average Order Value helps evaluate customer purchasing behavior
 
----
+10. Business Impact
+This analysis enables stakeholders to:
+Improve inventory and product planning
+Focus marketing efforts on underperforming regions
+Monitor business performance using clear KPIs
+Make informed, data-driven decisions
 
-## 🔍 Key Insights
-- Technology is the highest revenue-generating category
-- Consumer segment contributes the most sales
-- Sales peak in November, showing seasonality
-- Standard Class shipping generates the highest sales
-- West region leads overall sales performance
-
----
+10. Future Enhancements
+Add customer segmentation analysis
+Include profit and cost-based metrics
+Implement sales forecasting
 
 ## 📷 Dashboard Preview
 ![Retail Sales Dashboard](dashboard/retail_sales_dashboard.png)
