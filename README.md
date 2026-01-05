@@ -2,43 +2,68 @@
 
 1. Project Overview
 
-This project analyzes retail sales data to evaluate overall business performance.
-The objective is to identify sales trends, key performance indicators (KPIs), and insights related to product categories and regional sales to support data-driven decision-making.
+This project analyzes retail sales data to understand how the business is performing.
+The aim is to study sales trends, product categories, and regional sales using data analysis and dashboards.
 
-2. Business Objective
-The main objectives of this analysis are:
-To measure overall sales performance
-To identify top and underperforming product categories
-To analyze regional sales distribution
-To track monthly sales trends and key KPIs
+2. Project Objective
 
-3. Tools & Technologies
-SQL – Data querying and analysis
-Excel – Data cleaning and preprocessing
-Power BI – Data visualization and dashboard creation
-DAX – Creating calculated measures and KPIs
+The main goals of this project are:
 
-4. Dataset Description
-The dataset consists of retail transaction records containing:
+To find total sales and orders
+
+To see which product categories perform well
+
+To analyze sales by region
+
+To understand monthly sales trends
+
+3. Tools Used
+
+SQL – for data analysis
+
+Excel – for data cleaning
+
+Power BI – for dashboards and charts
+
+DAX – for creating measures
+
+4. Dataset Information
+
+The dataset contains retail sales data with:
+
 Order ID
-Order Date
-Product Category
-Sales Amount
-Quantity Sold
-Region
-Data cleaning and formatting were performed in Excel before importing the data into Power BI and SQL for analysis.
 
-5. Key KPIs & Measures
-The following KPIs were created using Power BI measures:
+Order Date
+
+Product Category
+
+Sales Amount
+
+Quantity
+
+Region
+
+The data was cleaned in Excel before analysis.
+
+5. Key Measures (Power BI)
+
+The following measures were created using DAX:
+
 Total Sales
+
 Total Orders
-Total Quantity Sold
-Average Order Value (AOV)
-Monthly Sales Trend
+
+Total Quantity
+
+Average Order Value
+
+Monthly Sales
+
 Sales by Category
+
 Sales by Region
 
-Sample DAX Measures
+Sample Measures
 Total Sales = SUM(Sales[Total_Amount])
 
 Total Orders = DISTINCTCOUNT(Sales[Order_ID])
@@ -46,38 +71,59 @@ Total Orders = DISTINCTCOUNT(Sales[Order_ID])
 Average Order Value =
 DIVIDE([Total Sales], [Total Orders])
 
-6. Analysis Approach
-Cleaned and validated raw data using Excel
-Performed data analysis using SQL queries
-Calculated KPIs using DAX measures in Power BI
-Built interactive dashboards to visualize trends and performance
+6. Analysis Steps
 
-7. Dashboard & Visualizations
-The Power BI dashboard includes:
-KPI cards for total sales and orders
-Monthly sales trend analysis
-Category-wise sales comparison
-Region-wise sales distribution
-(Add Power BI dashboard screenshots here)
+Cleaned the data using Excel
 
-8. Key Insights
-A few product categories contribute the majority of total sales
-Certain regions show lower sales performance compared to others
-Monthly sales trends reveal seasonal patterns
-Average Order Value helps evaluate customer purchasing behavior
+Used SQL to analyze sales and trends
 
-10. Business Impact
-This analysis enables stakeholders to:
-Improve inventory and product planning
-Focus marketing efforts on underperforming regions
-Monitor business performance using clear KPIs
-Make informed, data-driven decisions
+Created measures in Power BI
 
-10. Future Enhancements
-Add customer segmentation analysis
-Include profit and cost-based metrics
-Implement sales forecasting
+Built dashboards to show results
 
+7. Dashboard
+
+The Power BI dashboard shows:
+
+Total sales and orders
+
+Monthly sales trend
+
+Sales by category
+
+Sales by region
+
+(Add Power BI screenshots here)
+
+8. Key Findings
+
+Some product categories generate higher sales
+
+Some regions have lower sales
+
+Sales change month by month
+
+Average order value shows customer buying pattern
+
+9. Business Use
+
+This analysis can help the business to:
+
+Improve product planning
+
+Focus on low-performing regions
+
+Track sales performance easily
+
+Make better decisions using data
+
+10. Future Work
+
+Add customer analysis
+
+Include profit calculation
+
+Add sales prediction
 ## 📷 Dashboard Preview
 ![Retail Sales Dashboard](dashboard/retail_sales_dashboard.png)
 
